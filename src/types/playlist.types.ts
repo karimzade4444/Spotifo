@@ -2,7 +2,7 @@ import type { IBase, ID, ImageUrl, ITrack } from "./music.types"
 
 export interface IPlaylist extends IBase {
     name: string,
-    description: string,
+    description?: string,
     tracks: ITrack[],
     coverImage: ImageUrl,
     owner: {
