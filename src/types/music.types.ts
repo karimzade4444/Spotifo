@@ -23,7 +23,7 @@ export type TArtist = {
 } & TBase
 
 
-interface IBase {
+export interface IBase {
   id: ID;
   createdAt: string;
   updatedAt: string;
