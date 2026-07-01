@@ -8,7 +8,11 @@ type artist = null | string;
 type album = undefined | string;
 */
 
-
+type TBase = {
+    id: ID,
+    createdAt: string,
+    updatedAt: string
+}
 
 export type TArtist = {
     name: string,
@@ -24,7 +28,6 @@ interface IBase {
 }
 
 interface IArtist extends IBase {
-id: ID,
 name: string,
 image: ImageUrl,
 isVerifed: boolean,
@@ -32,7 +35,6 @@ isVerifed: boolean,
 }
 
 export interface ITrack extends IBase {
-    id: ID,
     artist: IArtist,
     title: string,
     duration: number,
