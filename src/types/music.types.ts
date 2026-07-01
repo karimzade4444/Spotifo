@@ -10,7 +10,7 @@ type album = undefined | string;
 
 export type TStatus = 'idle' | 'loading' | 'succeeded' | 'failed'
 
-type TBase = {
+export type TBase = {
     id: ID,
     createdAt: string,
     updatedAt: string
@@ -29,7 +29,7 @@ export interface IBase {
   updatedAt: string;
 }
 
-interface IArtist extends IBase {
+export interface IArtist extends IBase {
 name: string,
 image: ImageUrl,
 isVerifed: boolean,
