@@ -20,3 +20,9 @@ interface ITrack {
     artist: IArtist
 }
 
+interface IBase {
+    id: ID,
+    createdAt: string,
+    updatedAt: string
+}
+
