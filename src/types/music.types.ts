@@ -8,6 +8,8 @@ type artist = null | string;
 type album = undefined | string;
 */
 
+export type TStatus = 'idle' | 'loading' | 'succeeded' | 'failed'
+
 type TBase = {
     id: ID,
     createdAt: string,
