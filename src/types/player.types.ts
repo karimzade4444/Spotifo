@@ -7,7 +7,6 @@ export interface IPlayerState {
     isPlaying: boolean,
     volume: number,
     currentTime: number,
-    duration: number,
     repeatMode: 'off' | 'one' | 'all',
     isShuffling: boolean
 }
