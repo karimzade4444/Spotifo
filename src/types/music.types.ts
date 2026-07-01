@@ -1,9 +1,12 @@
 type ID = string;
-type Duration = number;
 type ImageUrl = string;
+
+/*
+type Duration = number;
 type isPublished = boolean;
 type artist = null | string;
 type album = undefined | string;
+*/
 
 interface IArtist {
 id: ID,
@@ -14,4 +17,6 @@ isVerifed: boolean
 
 interface ITrack {
     id: ID,
+    artist: IArtist
 }
+
