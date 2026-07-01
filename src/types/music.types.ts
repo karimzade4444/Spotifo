@@ -1,5 +1,5 @@
-type ID = string;
-type ImageUrl = string;
+export type ID = string;
+export type ImageUrl = string;
 
 /*
 type Duration = number;

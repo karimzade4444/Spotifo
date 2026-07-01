@@ -1,17 +1,15 @@
-import type { IBase } from "./music.types"
+import type { IBase, ID, ImageUrl, ITrack } from "./music.types"
 
 export interface IPlaylist extends IBase {
-    id: string,
     name: string,
     description: string,
     tracks: ITrack[],
-    coverImage: ImageUrl
+    coverImage: ImageUrl,
     owner: {
-        id: string,
+        id: ID,
         displayName: string,
         isPremium: boolean,
     }
-    createdAt: Date,
     isPublic: boolean,
     followers: number,
 }
