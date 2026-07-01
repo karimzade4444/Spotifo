@@ -8,21 +8,24 @@ type artist = null | string;
 type album = undefined | string;
 */
 
-interface IArtist {
+
+interface IBase {
+  id: ID;
+  createdAt: string;
+  updatedAt: string;
+}
+
+interface IArtist extends IBase {
 id: ID,
 name: string,
 image: ImageUrl;
 isVerifed: boolean
 }
 
-interface ITrack {
+interface ITrack extends IBase {
     id: ID,
     artist: IArtist
 }
 
-interface IBase {
-    id: ID,
-    createdAt: string,
-    updatedAt: string
-}
+
 
