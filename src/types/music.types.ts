@@ -9,6 +9,14 @@ type album = undefined | string;
 */
 
 
+
+export type TArtist = {
+    name: string,
+    image: ImageUrl,
+    isVerifed: boolean
+} & TBase
+
+
 interface IBase {
   id: ID;
   createdAt: string;
@@ -18,13 +26,17 @@ interface IBase {
 interface IArtist extends IBase {
 id: ID,
 name: string,
-image: ImageUrl;
-isVerifed: boolean
+image: ImageUrl,
+isVerifed: boolean,
+
 }
 
-interface ITrack extends IBase {
+export interface ITrack extends IBase {
     id: ID,
-    artist: IArtist
+    artist: IArtist,
+    title: string,
+    duration: number,
+    isPublished: boolean
 }
 
 
