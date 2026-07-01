@@ -40,7 +40,8 @@ export interface ITrack extends IBase {
     artist: IArtist,
     title: string,
     duration: number,
-    isPublished: boolean
+    isPublished: boolean,
+    audioUrl: string,
 }
 
 
