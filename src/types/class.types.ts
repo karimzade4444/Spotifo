@@ -22,3 +22,19 @@ export class SporifoPlayer {
 play(track?:ITrack): void {
     if (track) {
         this.loadTrack(track);
+    }
+    this.audio?.play();
+    this.state.isPlaying = true;
+}
+
+private loadTrack(track: ITrack): void {
+    this.audio = new Howl({
+        src: [track.audioUrl],
+        volume: this.state.volume
+    })
+    this.state.currentTrack = track;
+}
+seek(time: number): void {
+    this.audio?.seek(time);
+}
+}
